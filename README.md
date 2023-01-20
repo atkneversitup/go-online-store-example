@@ -1,6 +1,6 @@
 # go-online-store-example
 
-This project use
+This project use \n
 Golang Echo
 PostgreSQL : GORM
 AUTH : JWT
