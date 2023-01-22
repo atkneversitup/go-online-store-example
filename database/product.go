@@ -7,7 +7,7 @@ import (
 // Product struct represents the product model
 type Product struct {
 	gorm.Model
-	ID    uint `gorm:"primary_key;auto_increment"`
+	// ID    uint `gorm:"primary_key;auto_increment"`
 	Name  string
 	Price float32
 

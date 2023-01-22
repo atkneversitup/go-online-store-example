@@ -6,7 +6,7 @@ import (
 
 // User struct represents the user model
 type Status struct {
-	ID int
+	// ID int
 	gorm.Model
 	Name string
 }

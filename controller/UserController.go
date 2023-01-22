@@ -80,7 +80,7 @@ func (uc *UserController) Login(c echo.Context) error {
 	}
 	var user database.User
 	if err := database.DB.Where("username = ?", login.Username).First(&user).Error; err != nil {
-		return c.JSON(500, err)
+		return c.JSON(401, err.Error())
 	}
 	// Compare the provided password with the hashed password
 	if err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(login.Password)); err != nil {
